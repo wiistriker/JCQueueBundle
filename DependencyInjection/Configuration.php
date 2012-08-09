@@ -22,7 +22,9 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-            ->arrayNode('queues')->end()
+            ->arrayNode('queues')
+                ->prototype('array')
+                ->end()
             ->end();
 
         return $treeBuilder;

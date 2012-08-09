@@ -11,10 +11,15 @@ class Manager
         $this->queues = $queues;
     }
 
+    public function getQueues()
+    {
+        return $this->queues;
+    }
+
     public function getQueue($queue_name)
     {
         $options = array(
-            'name'          => 'queue1',
+            'name'          => $queue_name,
             'driverOptions' => array(
                 'host'      => '127.0.0.1',
                 'username'  => 'root',
