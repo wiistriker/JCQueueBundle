@@ -1,7 +1,7 @@
 JCQueueBundle
 =============
 
-Queue bundle with Zend_Queue support
+Queue bundle with [Zend_Queue](http://framework.zend.com/manual/ru/zend.queue.html) support
 
 ### Configure the bundle
 ```yaml
